@@ -1,6 +1,14 @@
 # Decoder_models_for_Image_Captioning
 Inject-type and merge acrhitectures
 
+## Procedure to Train Model:
+Clone the Repository to preserve directory structure.
+Run following python codes:
+- Init-inject: `python .py`
+- Par-inject: `python .py`
+- Pre-inject: `python .py`
+- Merge: `python .py`
+
 
  Layer | Decoder | CIDEr  | Bleu-4 | Bleu-3 | Bleu-2 | Bleu-1 | ROUGE-L | METEOR | SPICE |
  ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |    
