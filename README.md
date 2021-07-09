@@ -8,17 +8,14 @@ Inception V3 | 1 Layer (Without Dense) | Init-inject | 0.6001 | 0.1869 | 0.2828 
 Inception V3 | 1 Layer (Without Dense) | Par-inject | 0.6210  |0.1957  | 0.2971 | 0.4430  | 0.6336  | 0.4621 | 0.2008 | 0.1295 |
 Inception V3 | 1 Layer (Without Dense) | Pre-inject | 0.5821 | 0.1893 | 0.2849 | 0.4273 | 0.6235 | 0.4549 | 0.1961 | 0.1240 |
 Inception V3 | 1 Layer (Without Dense) | Merge | 0.5102 | 0.1665 | 0.2547 | 0.3930 | 0.5923 | 0.4279 | 0.1842 | 0.1170 |
-
 Inception V3 | 1 Layer (With Dense) | Init-inject | 0.5131 | 0.1696 | 0.2584 | 0.3950 | 0.5934 | 0.4316 | 0.1868 | 0.1140 |
 Inception V3 | 1 Layer (With Dense) | Par-inject | 0.5903 | 0.1932 | 0.2910 | 0.4348 | 0.6304 | 0.4553 | 0.1961 | 0.1251 |
 Inception V3 | 1 Layer (With Dense) | Pre-inject |0.5848 | 0.1907 | 0.2883 | 0.4331 | 0.6325 | 0.4540 | 0.1948 | 0.1232 |
 Inception V3 | 1 Layer (With Dense) | Merge | 0.4953 | 0.1581 | 0.2443 | 0.3823 | 0.5857 | 0.4226 | 0.1809 | 0.1077 |
-
 Inception V3 | 3 Layers (Without Dense) | Init-inject | 0.6524 | 0.2045 | 0.3038 | 0.4476 | 0.6379 | 0.4640 | 0.2067 | 0.1349 |
 Inception V3 | 3 Layers (Without Dense) | Par-inject | 0.5693 | 0.1898 | 0.2850 | 0.4247 | 0.6200 | 0.4517 | 0.1938 | 0.1221 |
 Inception V3 | 3 Layers (Without Dense) | Pre-inject | 0.5522 | 0.1868 | 0.2814 | 0.4213 | 0.6169 | 0.4496 | 0.1908 | 0.1193 |
 Inception V3 | 3 Layers (Without Dense) | Merge | 0.4988 | 0.1623 | 0.2517 | 0.3904 | 0.5898 | 0.4261 | 0.1833 | 0.1164 |
-
 Inception V3 | 3 Layers (With Dense) | Init-inject | 0.3830 | 0.1387 | 0.2221 | 0.3592 | 0.5618 | 0.4090 | 0.1637 | 0.0910 |
 Inception V3 | 3 Layers (With Dense) | Par-inject | 0.5815 | 0.1933 | 0.2881 | 0.4290 | 0.6240 | 0.4538 | 0.1945 | 0.1218 |
 Inception V3 | 3 Layers (With Dense) | Pre-inject | 0.5609 | 0.1885 | 0.2825 | 0.4222 | 0.6177 | 0.4511 | 0.1910 | 0.1188 |
