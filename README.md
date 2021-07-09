@@ -9,6 +9,8 @@ Run following python codes:
 - Pre-inject: `python generator_pre_inject.py`
 - Merge: `python generator_merge.py`
 
+## Results:
+Performance metrics results of Inception V3 and different language model-based image captioning system on MS COCO dataset.
 
  Layer | Decoder | CIDEr  | Bleu-4 | Bleu-3 | Bleu-2 | Bleu-1 | ROUGE-L | METEOR | SPICE |
  ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |    
