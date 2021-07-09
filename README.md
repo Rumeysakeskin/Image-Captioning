@@ -32,14 +32,18 @@ Performance metrics results of Inception V3 and different language model-based i
  3 Layers (With Dense) | Merge | 0.4882 | 0.1595 | 0.2463 | 0.3847 | 0.5903 | 0.4236 | 0.1802 | 0.1077 |
 
 <img src="images/pic1.png" width="300" height="240">
+
 Generated captions:
+
 - Init-inject captioner: A man swinging a baseball bat on a field.
 - Par-inject captioner: A man swinging a tennis racket at a ball.
 - Pre-inject captioner: A man holding a tennis racquet on top of a tennis court.
 - Merge captioner: A man is swinging a racket at a ball.
 
 <img src="images/pic2.png" width="300" height="240">
-Generated captions:                                                                                                      
+
+Generated captions:    
+
 - Init-inject captioner: A blue and yellow train is on a train track.
 - Par-inject captioner: A train is on the tracks with a train station.
 - Pre-inject captioner: A train is on the tracks near a train station.
