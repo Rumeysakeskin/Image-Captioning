@@ -30,3 +30,6 @@ Performance metrics results of Inception V3 and different language model-based i
  3 Layers (With Dense) | Par-inject | **0.5815** | **0.1933** | **.2881** | **0.4290** | **0.6240** | **0.4538** | **0.1945** | **0.1218** |
  3 Layers (With Dense) | Pre-inject | 0.5609 | 0.1885 | 0.2825 | 0.4222 | 0.6177 | 0.4511 | 0.1910 | 0.1188 |
  3 Layers (With Dense) | Merge | 0.4882 | 0.1595 | 0.2463 | 0.3847 | 0.5903 | 0.4236 | 0.1802 | 0.1077 |
+
+<img src="images/pic1.png" width="300" height="240">
+<img src="images/pic2.png" width="300" height="240">
