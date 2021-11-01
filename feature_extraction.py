@@ -38,16 +38,13 @@ preprocess = transforms.Compose([
     transforms.Resize(299), #299
     transforms.CenterCrop(299),
     transforms.ToTensor(),
-    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-])
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),])
 
 encoder = inception_v3(pretrained=True)
 encoder = encoder.to(device)
-
 image_batch = torch.zeros(batch_size, 3, 299, 299)
 
 for ids, im_path in tqdm(enumerate(train_image_names)):
-
     encoder.eval()
     im = load_image(im_path)
     im = gray_to_rgb(im)
