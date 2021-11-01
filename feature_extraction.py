@@ -34,6 +34,7 @@ train_captions, train_image_names = load_mscoco_annotations_train(root='Resized'
 
 batch_size = 128
 feature_size = 2048
+# Image feature extraction
 preprocess = transforms.Compose([
     transforms.Resize(299), #299
     transforms.CenterCrop(299),
