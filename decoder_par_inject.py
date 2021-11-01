@@ -17,20 +17,15 @@ class Decoder(nn.Module):
         self.map = nn.Linear(feature_size, embed_size)
         self.softmax = nn.LogSoftmax(dim=1)
 
-
+ #Par inject
     def forward(self, input, hidden, feature):
-
         feature = self.map(feature)
-
         output = self.embedding(input)
-
         output = F.relu(output)
-
         output = torch.cat((feature, output), dim=2)
-
         output, hidden = self.gru(output, hidden)
-
         output = self.softmax(self.out(output[0]))
+        
         #output = output.squeeze(0)
 
         return output, hidden
