@@ -117,21 +117,16 @@ def generate_caption(image_tensor, encoder, decoder, max_len=30):
 
     feature = image_tensor.to(device)
     feature = feature.unsqueeze(0)
-
-    "Does not work..."
+    
     decoder_hidden = torch.zeros(num_layers, 1, hidden_size).to(device)
     feature = feature.unsqueeze(0)
     
     decoder_input = torch.ones(1, 1).type(torch.LongTensor).to(device)
     caption = ""
     for i in range(max_len):
-        # with torch.no_grad():
         out, decoder_hidden = decoder(decoder_input, decoder_hidden, feature) #, feature  # i
-
         out = out.argmax(dim=1)
-
         caption += voc.index2word[int(out)] + " "
-
         decoder_input = out.unsqueeze(0)
 
     print(caption)
