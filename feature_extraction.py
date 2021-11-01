@@ -53,13 +53,9 @@ for ids, im_path in tqdm(enumerate(train_image_names)):
 
     im_path = im_path.split("Resized/train2017/")[1]
     image_id = im_path[:-4]
-
     batch_index = ids % batch_size
-    #image_batch[batch_index] = im
-    #image_tensor = image_batch[:batch_index + 1]
-
     image_tensor = im.unsqueeze(0)
-
+    
     with torch.no_grad():
         feature_tensor = encoder(image_tensor.to(device)).squeeze(0)
 
