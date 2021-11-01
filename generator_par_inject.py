@@ -115,20 +115,13 @@ def train_step(tokens_tensor, image_tensor, decoder, decoder_optimizer, encoder,
 
 def generate_caption(image_tensor, encoder, decoder, max_len=30):
 
-    #image_tensor = image_tensor.unsqueeze(0)
-
-    #with torch.no_grad():
-    #    feature = encoder(image_tensor.to(device))
-
     feature = image_tensor.to(device)
     feature = feature.unsqueeze(0)
 
     "Does not work..."
     decoder_hidden = torch.zeros(num_layers, 1, hidden_size).to(device)
     feature = feature.unsqueeze(0)
-
-
-    # input = torch.tensor(voc.word2index["soc"]).type(torch.LongTensor).to(device)
+    
     decoder_input = torch.ones(1, 1).type(torch.LongTensor).to(device)
     caption = ""
     for i in range(max_len):
@@ -157,19 +150,14 @@ def train(encoder, decoder, batch_size=128, n_iters=50):
     batch_index = 0
     data_sample = train_captions_tokens.shape[0]
 
-    image_batch = torch.zeros(batch_size, 2048)  #---------------
-    #image_batch = torch.zeros(batch_size, 3, 299, 299)
+    image_batch = torch.zeros(batch_size, 2048) 
 
     caption_batch = torch.zeros(batch_size, 16)
     for iters in tqdm(range(1, n_iters + 1)):
         for ids, im_path in tqdm(enumerate(train_image_names)):
             encoder.eval()
             decoder.train()
-
-            #im = load_image(im_path)
-            #im = gray_to_rgb(im)
-            #im = preprocess(im)
-
+            
             im_path = im_path.split("Resized/train2017/")[1]
             image_id = im_path[:-4]
             image = torch.load(f"inception_v3_features/features_{image_id}.pt")
