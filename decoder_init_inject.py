@@ -13,7 +13,7 @@ class Decoder(nn.Module):
         self.gru = nn.GRU(embed_size, hidden_size, num_layers=num_layers)
         self.out = nn.Linear(hidden_size, output_size)
         self.softmax = nn.LogSoftmax(dim=1)
-
+# Init inject
     def forward(self, input, hidden):
         
         output = self.embedding(input)
