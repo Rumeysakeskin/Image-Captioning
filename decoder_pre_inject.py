@@ -17,24 +17,18 @@ class Decoder(nn.Module):
         self.out = nn.Linear(embed_size, output_size)
 
         self.softmax = nn.LogSoftmax(dim=1)
-
+    #Pre inject
     def forward(self, input, hidden, feature, sequence_length):
 
         if sequence_length == 0:
-
             feature = self.map(feature)
-
             feature = F.relu(feature)
-
             output, hidden = self.gru(feature, hidden)
 
         else:
             output = self.embedding(input)
-
             output = F.relu(output)
-
             output, hidden = self.gru(output, hidden)
-
         output = self.softmax(self.out(output[0]))
 
         return output, hidden
