@@ -1,4 +1,4 @@
-# Decoder_models_for_Image_Captioning
+# Decoder models for Image Captioning
 Inject-type and merge acrhitectures
 
 ## Procedure to Train Model:
