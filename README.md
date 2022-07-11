@@ -51,4 +51,19 @@ Generated captions:
 
 Reference and generated captions of images for different decoder architectures with Inception v3 and 1-layer GRU language model (1st image: 000000127530.jpg, 2nd image: 000000060090.jpg) on MSCOCO validation dataset.
 
+## Citation:
+
+`@article{keskin2021benchmark,
+  title={A benchmark for feature-injection architectures in image captioning},
+  author={Keskin, Rumeysa and {\c{C}}AYLI, {\"O}zkan and MORAL, {\"O}zge Taylan and KILI{\c{C}}, Volkan and Aytu{\u{g}}, ONAN},
+  journal={Avrupa Bilim ve Teknoloji Dergisi},
+  number={31},
+  pages={461--468},
+  year={2021}
+}`
+
+
+
+
+`python generator_init_inject.py`
 
