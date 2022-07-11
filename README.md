@@ -61,4 +61,4 @@ Reference and generated captions of images for different decoder architectures w
   pages={461--468},
   year={2021}
 }
-
+CITATION.cff
