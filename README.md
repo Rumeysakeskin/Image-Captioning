@@ -53,17 +53,12 @@ Reference and generated captions of images for different decoder architectures w
 
 ## Citation:
 
-`@article{keskin2021benchmark,
+@article{keskin2021benchmark,
   title={A benchmark for feature-injection architectures in image captioning},
-  author={Keskin, Rumeysa and {\c{C}}AYLI, {\"O}zkan and MORAL, {\"O}zge Taylan and KILI{\c{C}}, Volkan and Aytu{\u{g}}, ONAN},
+  author={KESKIN, CAYLI, MORAL, KILIC, ONAN}
   journal={Avrupa Bilim ve Teknoloji Dergisi},
   number={31},
   pages={461--468},
   year={2021}
-}`
-
-
-
-
-`python generator_init_inject.py`
+}
 
