@@ -1,7 +1,7 @@
 # Decoder models for Image Captioning
 Inject-type and merge acrhitectures
 
-## Procedure to Train Model:
+## Train Model:
 Clone the Repository to preserve directory structure.
 Run following python codes:
 - Init-inject: `python generator_init_inject.py`
